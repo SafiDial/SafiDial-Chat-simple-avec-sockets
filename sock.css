@@ -1,0 +1,135 @@
+/* sock.css */
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f5f7;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main App Container */
+.app {
+    width: 100%;
+    max-width: 1200px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.chatTitle {
+    background-color: #4a154b;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0;
+}
+
+/* Container for Channels and Messages */
+.container {
+    display: flex;
+    height: calc(100% - 80px); /* Adjust height minus header */
+}
+
+/* Sidebar */
+.channelList {
+    width: 300px;
+    background-color: #f3f4f6;
+    border-right: 1px solid #e1e4e8;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.channelList h1 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #4a154b;
+    padding-bottom: 10px;
+}
+
+.channelList ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.channelList li {
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.channelList li:hover {
+    background-color: #e1e4e8;
+}
+
+/* Message Container */
+.msgContainer {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow-y: auto;
+    border-left: 1px solid #e1e4e8;
+}
+
+.msgContainer p {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #e1e4e8;
+    border-radius: 4px;
+    color: #333;
+}
+
+/* Typing Indicator */
+#isWritting {
+    padding: 10px;
+    font-style: italic;
+    color: #b0b0b0;
+}
+
+/* Chat Form */
+form {
+    display: flex;
+    border-top: 1px solid #e1e4e8;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+#msgInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 1em;
+}
+
+#btnSend {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4a154b;
+    color: #ffffff;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#btnSend:hover {
+    background-color: #3b0d3e;
+}
